@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+body{
+    background: linear-gradient(90deg,rgb(247, 246, 246),rgb(238, 232, 147));
+    width: 100%;
+    height: max-content; 
+}
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-evenly;
+    
+}
+.left {
+    flex-basis: 40%;
+    min-width: 360px;
+    position: relative;
+    text-align: center;
+    /* padding: 10px 20px; */
+}
+span{
+    color: seagreen;
+    font-weight: 800;
+}
+.right{
+    flex-basis: 55%;
+    min-width: 380px;
+    text-align: center;
+}
+
+.right img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.Features-fluid2 {
+    padding: 40px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.Features-items {
+    background-color: #d5e6f1;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.Features-items img {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    object-fit: cover;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+/* Styling for the image grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 10px; /* Space between images */
+    margin: 20px 0;
+}
+
+/* Responsive Design: Adjust grid layout on smaller screens */
+@media (max-width: 1024px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* 1 column on smaller screens (mobile) */
+    }
+}
+
+/* Optional: Style for images to maintain aspect ratio */
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
+.snap{
+    background-color: #f8f9fa; /* Light gray background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 15px; 
+    margin-top: 10px;
+}
+
+/* FAQ Section Styling */
+
+.faq{
+    background-color: #f8f9fa; /* Light gray background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+}
+.accordion-button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+.accordion-body {
+    font-size: 1rem;
+    color: #333;
+    gap: 1rem;
+}
+
+
+/* Styling for the About Section */
+.about {
+    background-color: #f8f9fa; /* Light gray background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-height: max-content;
+}
+
+/* Typing Animation */
+.typing {
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    overflow: hidden;
+    border-right: 13px solid rgb(255, 253, 253);
+    word-break: break-word; /* Ensures text breaks properly */
+    white-space: normal; /* Allows line wrapping */
+}
+
+/* Responsive Text Sizes */
+@media (max-width: 768px) { /* Tablets and smaller screens */
+    .typing {
+        font-size: 1rem;
+        display: block; /* Forces text to wrap */
+        width: 100%; /* Ensures full width */
+    }
+}
+
+@media (min-width: 769px) { /* Larger screens */
+    .typing {
+        font-size: 1.5rem;
+        display: inline-block; /* Keeps inline typing for larger screens */
+    }
+}
+
+/* .about nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about nav ul li {
+    display: inline;
+    margin: 0 15px;
+    gap: 40px;
+}
+
+.about nav ul li a {
+    color: #222222;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.about nav ul li a:hover {
+    color: rgb(78, 77, 77);
+} */
+
+/* Footer Styling */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer nav ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer nav ul li a:hover {
+    color: white;
+}
